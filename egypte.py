@@ -1,15 +1,12 @@
-def multiplication(valeur, max=10):
-    for i in range(1, max):
-     print("{:1}".format(valeur * i), end=" : ")
-    print("{:1}".format(valeur * max))
+def egypt(n,p):
+    resultat=0
+    while n!=0:
+        if n%2==1:
+            resultat+=p
+        n>>=1
+        p<<=1
+    return resultat
 
-
-def table_pythagore(max = 10):
-    print(("------" * max)[:-3])
-    for i in range(1, max + 1):
-        multiplication(i, max)
-        print(("------" * max)[:-3])
-
-
-#multiplication(4)
-table_pythagore()
+var = egypt(22,3)
+print(var)
+print("hello woorld")
