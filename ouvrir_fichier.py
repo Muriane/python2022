@@ -1,3 +1,6 @@
+from ast import Str
+
+
 print("Entrez un nombre")
 N = int(input())
 def syracuse(n):
@@ -9,6 +12,9 @@ def syracuse(n):
             syr.append(syr[-1] * 3 + 1)
 
     return syr
-print("Suite de Syracuse pour n =" + str(N) , syracuse(N), sep='\n')
-
-
+chaine=Str(N)
+fichier = open('exemple.txt', "a")
+contenu=fichier.write("chaine")
+contenu = fichier.read()
+print(contenu)
+fichier.close()
